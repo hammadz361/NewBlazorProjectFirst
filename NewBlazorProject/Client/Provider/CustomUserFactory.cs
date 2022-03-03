@@ -13,7 +13,7 @@ namespace NewBlazorProject.Client.Provider
             : base(accessor)
         {
         }
-        // commit
+        // commit all
         public override async ValueTask<ClaimsPrincipal> CreateUserAsync(
             RemoteUserAccount account,
             RemoteAuthenticationUserOptions options)
