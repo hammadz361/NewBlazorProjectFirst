@@ -8,14 +8,10 @@ namespace NewBlazorProject.Client.Provider
     public class CustomUserFactory
     : AccountClaimsPrincipalFactory<RemoteUserAccount>
     {
-      //Hello from Hammad
         public CustomUserFactory(IAccessTokenProviderAccessor accessor)
             : base(accessor)
         {
         }
-        // commit all
-        // haroon and inzamam
-        // InziMalik
         public override async ValueTask<ClaimsPrincipal> CreateUserAsync(
             RemoteUserAccount account,
             RemoteAuthenticationUserOptions options)
@@ -26,14 +22,12 @@ namespace NewBlazorProject.Client.Provider
             {
                 var identity = (ClaimsIdentity)user.Identity;
                 var roleClaims = identity.FindAll(identity.RoleClaimType).ToArray();
-               
                 if (roleClaims.Any())
                 {
                     foreach (var existingClaim in roleClaims)
                     {
                         identity.RemoveClaim(existingClaim);
                     }
-                    
 
                     var rolesElem = account.AdditionalProperties[identity.RoleClaimType];
 
