@@ -4,8 +4,5 @@ namespace NewBlazorProject.Server.Models
 {
     public class ApplicationUser : IdentityUser
     {
-        //inzii
-        //Inzi2
-        //haroon
     }
 }
