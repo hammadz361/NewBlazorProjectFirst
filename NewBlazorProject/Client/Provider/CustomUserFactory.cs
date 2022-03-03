@@ -13,7 +13,7 @@ namespace NewBlazorProject.Client.Provider
             : base(accessor)
         {
         }
-
+        // commit
         public override async ValueTask<ClaimsPrincipal> CreateUserAsync(
             RemoteUserAccount account,
             RemoteAuthenticationUserOptions options)
@@ -31,6 +31,7 @@ namespace NewBlazorProject.Client.Provider
                     {//new comment
                         identity.RemoveClaim(existingClaim);
                     }
+                    // commit by hamad
 
                     var rolesElem = account.AdditionalProperties[identity.RoleClaimType];
 
