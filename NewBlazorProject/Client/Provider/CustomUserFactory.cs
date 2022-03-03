@@ -23,7 +23,8 @@ namespace NewBlazorProject.Client.Provider
             {
                 var identity = (ClaimsIdentity)user.Identity;
                 var roleClaims = identity.FindAll(identity.RoleClaimType).ToArray();
-                // New Comment
+                // New Comment 
+                //commit by inzi
                 if (roleClaims.Any())
                 {
                     foreach (var existingClaim in roleClaims)
