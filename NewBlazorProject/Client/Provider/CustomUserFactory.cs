@@ -24,11 +24,11 @@ namespace NewBlazorProject.Client.Provider
             {
                 var identity = (ClaimsIdentity)user.Identity;
                 var roleClaims = identity.FindAll(identity.RoleClaimType).ToArray();
-
+                // New Comment
                 if (roleClaims.Any())
                 {
                     foreach (var existingClaim in roleClaims)
-                    {
+                    {//new comment
                         identity.RemoveClaim(existingClaim);
                     }
 
