@@ -8,7 +8,7 @@ namespace NewBlazorProject.Client.Provider
     public class CustomUserFactory
     : AccountClaimsPrincipalFactory<RemoteUserAccount>
     {
-      //Hello from admin
+      //Hello from Hammad
         public CustomUserFactory(IAccessTokenProviderAccessor accessor)
             : base(accessor)
         {
