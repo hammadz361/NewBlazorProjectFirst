@@ -13,10 +13,6 @@ namespace NewBlazorProject.Client.Provider
             : base(accessor)
         {
         }
-        // commit all
-        // haroon and inzamam
-        // InziMalik
-        //Hammad from Haroom Laptop
         public override async ValueTask<ClaimsPrincipal> CreateUserAsync(
             RemoteUserAccount account,
             RemoteAuthenticationUserOptions options)
