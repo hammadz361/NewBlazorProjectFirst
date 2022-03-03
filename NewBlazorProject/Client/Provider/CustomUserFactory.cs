@@ -8,7 +8,6 @@ namespace NewBlazorProject.Client.Provider
     public class CustomUserFactory
     : AccountClaimsPrincipalFactory<RemoteUserAccount>
     {
-        // git testing
         public CustomUserFactory(IAccessTokenProviderAccessor accessor)
             : base(accessor)
         {
