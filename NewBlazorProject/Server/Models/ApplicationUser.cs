@@ -6,5 +6,6 @@ namespace NewBlazorProject.Server.Models
     {
         //inzii
         //Inzi2
+        // haroomn ka laptop mai masla hai
     }
 }
