@@ -8,6 +8,7 @@ namespace NewBlazorProject.Client.Provider
     public class CustomUserFactory
     : AccountClaimsPrincipalFactory<RemoteUserAccount>
     {
+        // hello first commit
         public CustomUserFactory(IAccessTokenProviderAccessor accessor)
             : base(accessor)
         {
