@@ -24,5 +24,6 @@ namespace NewBlazorProject.Shared.Models.MasterData
         [NotMapped]
         public List<bool>? SelectLevel { get; set; }
         public bool? IsActive { get; set; }
+
     }
 }
