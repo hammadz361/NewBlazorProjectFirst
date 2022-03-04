@@ -4,7 +4,7 @@ namespace NewBlazorProject.Server.InterFaces
 {
     public interface IHRInterface
     {
-        /*HR_Posting AddPosting(HR_Posting hR_Posting);
+        HR_Posting AddPosting(HR_Posting hR_Posting);
         HR_Designation AddDesignation(HR_Designation hR_Designation);
         HR_Clearance AddClearance(HR_Clearance hR_Clearance);
         HR_Catagory hR_Catagory(HR_Catagory hR_Catagory);
@@ -27,6 +27,6 @@ namespace NewBlazorProject.Server.InterFaces
         void DeletePostingsById(int Id);
         void DeleteDesignation(int Id);
         void DeleteClearance(int Id);
-        void DeleteCatagory(int Id);*/
+        void DeleteCatagory(int Id);
     }
 }
