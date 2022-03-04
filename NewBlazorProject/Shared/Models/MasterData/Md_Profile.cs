@@ -10,7 +10,6 @@ namespace NewBlazorProject.Shared.Models.MasterData
     [Table("MD_Profile")]
     public class Md_Profile
     {
-
         [Key]
         public int Id { get; set; }
         [Required]
@@ -30,7 +29,6 @@ namespace NewBlazorProject.Shared.Models.MasterData
         public string? FatherName { get; set; }
         [Required]
         [Display(Name = "Gender")]
-
         public int GenderId { get; set; }
         [ForeignKey("Gender")]
         public virtual MD_Gender? Gender { get; set; }
@@ -42,7 +40,6 @@ namespace NewBlazorProject.Shared.Models.MasterData
         public string? PhoneNumber { get; set; }
         [Required]
         [Display(Name = "Address")]
-        
         public int? AddressId { get; set; }
         [ForeignKey("AddressId")]
         public virtual MD_Address? Address { get; set; }
@@ -51,7 +48,6 @@ namespace NewBlazorProject.Shared.Models.MasterData
         public int EducationId { get; set; }
         [ForeignKey("EducationId")]
         public virtual MD_Education? Education { get; set;}
-
         [Required]
         [Display(Name = "Posting")]
         public int PostingId { get; set; }
