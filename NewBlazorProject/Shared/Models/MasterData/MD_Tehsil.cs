@@ -11,6 +11,7 @@ namespace NewBlazorProject.Shared.Models
         [Required]
         [Display(Name = "Tehsil Name")]
         public string? Name { get; set; }
+        [Display(Name = "District")]
         public int DistrictId { get; set; }
         [ForeignKey("DistrictId")]
         public virtual MD_District? District { get; set; }

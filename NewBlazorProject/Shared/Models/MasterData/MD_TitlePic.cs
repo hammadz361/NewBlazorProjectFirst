@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NewBlazorProject.Shared.Models.MasterData
 {
+    [Table("MD_TitlePic")]
     public class MD_TitlePic
     {
-
         [Key]
-
         public int Id { get; set; }
         [Required]
         [Display(Name ="Title path")]
