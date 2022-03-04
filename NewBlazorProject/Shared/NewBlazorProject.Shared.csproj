@@ -12,6 +12,5 @@
 
   <ItemGroup>
     <Folder Include="Models\HR Data\" />
-    <Folder Include="Models\Customer Data\" />
   </ItemGroup>
 </Project>
