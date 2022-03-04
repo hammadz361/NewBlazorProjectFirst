@@ -6,6 +6,8 @@ using NewBlazorProject.Server.Data;
 using NewBlazorProject.Server.Models;
 using Microsoft.AspNetCore.Identity;
 using System.IdentityModel.Tokens.Jwt;
+using NewBlazorProject.Server.InterFaces;
+using NewBlazorProject.Server.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,8 +33,10 @@ builder.Services.AddIdentityServer()
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("role");
 
 builder.Services.AddTransient<IProfileService, ProfileService>();
+builder.Services.AddScoped<IAdminInterface, AdminService>();
+builder.Services.AddScoped<IHRInterface, HRService>();
+builder.Services.AddScoped<ICustomerInterface, CustomerService>();
 
-JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("role");
 builder.Services.AddAuthentication()
     .AddIdentityServerJwt();
 builder.Services.AddOptions();
