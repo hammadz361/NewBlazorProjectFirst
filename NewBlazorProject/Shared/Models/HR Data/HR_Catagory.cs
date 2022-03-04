@@ -6,19 +6,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NewBlazorProject.Shared.Models.Customer_Data
+namespace NewBlazorProject.Shared.Models.HR_Data
 {
-    [Table("HR_Posting")]
-    public class HR_Posting
+    [Table("HR_Catagory")]
+    public class HR_Catagory
     {
         [Key]
         public int? Id { get; set; }
         [Required]
+        [Display(Name ="Catagory Name")]
         public string? Name { get; set; }
-        [Required]
-        public string? PostingArea { get; set; }
-        public string? ServiceDuration { get; set; }
-        public bool? StillEmployee { get; set; }
-
+        public bool? IsActive { get; set; }
     }
 }
