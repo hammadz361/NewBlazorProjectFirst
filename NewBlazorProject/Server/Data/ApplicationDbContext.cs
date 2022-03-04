@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using NewBlazorProject.Server.Models;
+using NewBlazorProject.Shared.Models.MasterData;
 
 namespace NewBlazorProject.Server.Data
 {
