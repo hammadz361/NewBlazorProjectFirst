@@ -30,8 +30,8 @@ namespace NewBlazorProject.Server.Data
         public DbSet<MD_Gender> mD_Genders { get; set; }
         public DbSet<MD_UpdatedBy> mD_UpdatedBys { get; set; }
         public DbSet<MD_Address> mD_Addresses { get; set; }
-        //public DbSet<MD_UploadFile> MD_UploadFiles { get; set; }
-        //public DbSet<MD_Directory> MD_Directories { get; set; }
+        public DbSet<MD_UploadFile> MD_UploadFiles { get; set; }
+        public DbSet<MD_Directory> MD_Directories { get; set; }
 
 
 
