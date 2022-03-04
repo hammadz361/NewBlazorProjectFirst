@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace NewBlazorProject.Shared.Models
+namespace NewBlazorProject.Shared.Models.MasterData
 {
     [Table("MD_District")]
     public class MD_District

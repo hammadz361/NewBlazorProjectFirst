@@ -9,14 +9,5 @@ namespace NewBlazorProject.Server.InterFaces
     5- Delete Methods*/
     public interface IAdminInterface
     {
-        MD_Address AddAddress(MD_Address mD_Address);
-
-        Task<IEnumerable<MD_Address>> GetAllAddress();
-
-        Task<MD_Address> GetAddressById(int Id);
-
-        void UpdateAddress(MD_Address mD_Address);
-
-        void DeleteAddress(int Id);
     }
 }
