@@ -21,15 +21,8 @@ namespace NewBlazorProject.Server.InterFaces
 
 
         Task<MD_Address> GetAddressById(int Id);
-        Task<MD_CreatedBy> GetCreatedById(int Id);
-        Task<MD_Directory> GetDirectoryById(int Id);
-        Task<MD_Education> GetEducationById(int Id);
-
+        Task<IEnumerable<MD_Address>> GetAllAddress();
         void UpdateAddress(MD_Address mD_Address);
-        void UpdateCreatedBy(MD_CreatedBy mD_CreatedBy);
-        void UpdateDirectory(MD_Directory mD_Directory);
-        void UpdateEducation(MD_Education mD_Education);
-
         void DeleteAddress(int Id);
         void DeleteCreatedBy(int Id);
         void DeleteDirectory(int Id);
