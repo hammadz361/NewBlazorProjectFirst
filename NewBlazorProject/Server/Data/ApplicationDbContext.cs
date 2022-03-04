@@ -24,17 +24,13 @@ namespace NewBlazorProject.Server.Data
             builder.Entity<IdentityRole>().HasData(new IdentityRole { Name = "Admin", NormalizedName = "ADMIN", Id = Guid.NewGuid().ToString(), ConcurrencyStamp = Guid.NewGuid().ToString() });
         }
 
-        public DbSet<MD_District> mD_Districts { get; set; }
-        public DbSet<MD_Tehsil> mD_Tehsils { get; set; }
-        public DbSet<MD_CreatedBy> mD_CreatedBy { get; set; }
-        public DbSet<MD_Gender> mD_Genders { get; set; }
-        public DbSet<MD_UpdatedBy> mD_UpdatedBys { get; set; }
-        public DbSet<MD_Address> mD_Addresses { get; set; }
+        public DbSet<MD_District> MD_Districts { get; set; }
+        public DbSet<MD_Tehsil> MD_Tehsils { get; set; }
+        public DbSet<MD_CreatedBy> MD_CreatedBy { get; set; }
+        public DbSet<MD_Gender> MD_Genders { get; set; }
+        public DbSet<MD_UpdatedBy> MD_UpdatedBys { get; set; }
+        public DbSet<MD_Address> MD_Addresses { get; set; }
         public DbSet<MD_UploadFile> MD_UploadFiles { get; set; }
         public DbSet<MD_Directory> MD_Directories { get; set; }
-
-
-
-
     }
 }
