@@ -16,6 +16,7 @@ namespace NewBlazorProject.Shared.Models.MasterData
         [Display(Name ="Select File")]
         public string? Path { get; set; }
         [Display(Name ="Select Multiple Files")]
+        [NotMapped]
         public List<string>? MultiplePath { get; set; } 
         [Display(Name ="Select Directory")]
         public int DirectoryId { get; set; }
