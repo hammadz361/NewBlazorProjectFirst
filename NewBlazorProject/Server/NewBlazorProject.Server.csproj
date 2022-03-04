@@ -40,4 +40,13 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="InterFaces\Customer Data\" />
+    <Folder Include="InterFaces\HR Data\" />
+    <Folder Include="InterFaces\MasterData\" />
+    <Folder Include="Services\Customer Data\" />
+    <Folder Include="Services\HR Data\" />
+    <Folder Include="Services\MasterData\" />
+  </ItemGroup>
+
 </Project>
