@@ -14,5 +14,6 @@ namespace NewBlazorProject.Shared.Models
         public int DistrictId { get; set; }
         [ForeignKey("DistrictId")]
         public virtual MD_District? District { get; set; }
+        public bool? IsActive { get; set; }
     }
 }

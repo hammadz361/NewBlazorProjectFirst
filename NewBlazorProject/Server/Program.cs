@@ -1,3 +1,4 @@
+global using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
 using Duende.IdentityServer.Services;

@@ -11,5 +11,6 @@ namespace NewBlazorProject.Shared.Models
         [Required]
         [Display(Name = "District Name")]
         public string? Name { get; set; }
+        public bool? IsActive { get; set; }
     }
 }
