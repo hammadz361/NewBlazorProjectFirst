@@ -5,6 +5,7 @@ namespace NewBlazorProject.Server.Services
 {
     public class AdminService : IAdminInterface
     {
+        // comment add by saeed
         public MD_Address? AddAddress(MD_Address mD_Address)
         {
            if(mD_Address == null)
@@ -18,6 +19,7 @@ namespace NewBlazorProject.Server.Services
             }
             return null;
         }
+        
 
         public MD_CreatedBy AddCreatedBy(MD_CreatedBy mD_CreatedBy)
         {
