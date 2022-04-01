@@ -4,29 +4,29 @@ namespace NewBlazorProject.Server.InterFaces
 {
     public interface IHRInterface
     {
-        HR_Posting AddPosting(HR_Posting hR_Posting);
-        HR_Designation AddDesignation(HR_Designation hR_Designation);
-        HR_Clearance AddClearance(HR_Clearance hR_Clearance);
-        HR_Catagory hR_Catagory(HR_Catagory hR_Catagory);
+       Task<HR_Posting> AddHR_Posting(HR_Posting hR_Posting);
+       Task <HR_Designation> AddHR_Designation(HR_Designation hR_Designation);
+       Task <HR_Clearance> AddHR_Clearance(HR_Clearance hR_Clearance);
+       Task <HR_Catagory> AddHR_Catagory(HR_Catagory hR_Catagory);
 
-        Task<IEnumerable<HR_Posting>> GetAllPostings();
-        Task<IEnumerable<HR_Designation>> GetAllDesignation();
-        Task<IEnumerable<HR_Clearance>> GetAllClearacne();
-        Task<IEnumerable<HR_Catagory>> GetAllCatagory();
+        Task<IEnumerable<HR_Posting>> GetAllHR_Posting();
+        Task<IEnumerable<HR_Designation>> GetAllHR_Designation();
+        Task<IEnumerable<HR_Clearance>> GetAllHR_Clearacne();
+        Task<IEnumerable<HR_Catagory>> GetAllHR_Catagory();
 
-        Task<HR_Posting> GetPostingsById(int Id);
-        Task<HR_Designation> GetDesignationById(int Id);
-        Task<HR_Clearance> GetClearanceById(int Id);
-        Task<HR_Catagory> GetCatagoryById(int Id);
+        Task<HR_Posting> GetHR_PostingById(int postingId);
+        Task<HR_Designation> GetHR_DesignationById(int DesignationId);
+        Task<HR_Clearance> GetHR_ClearanceById(int ClearanceId);
+        Task<HR_Catagory> GetHR_CatagoryById(int CatagoryId);
 
-        void UpdatePosting(HR_Posting hR_Posting);
-        void UpdateDesignation(HR_Designation hR_Designation);
-        void UpdateClearance(HR_Clearance hR_Clearance);
-        void UpdateCatagory(HR_Catagory hR_Catagory);
+        Task <HR_Posting> UpdateHR_Posting(HR_Posting hR_Posting);
+        Task<HR_Designation> UpdateHR_Designation(HR_Designation hR_Designation);
+        Task<HR_Clearance> UpdateHR_Clearance(HR_Clearance hR_Clearance);
+        Task<HR_Catagory> UpdateHR_Catagory(HR_Catagory hR_Catagory);
 
-        void DeletePostingsById(int Id);
-        void DeleteDesignation(int Id);
-        void DeleteClearance(int Id);
-        void DeleteCatagory(int Id);
+        void DeleteHR_PostingsById(int PostingId);
+        void DeleteHR_Designation(int DesignationId);
+        void DeleteHR_Clearance(int ClearanceId);
+        void DeleteHR_Catagory(int CatagoryId);
     }
 }

@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using NewBlazorProject.Server.Models;
 using NewBlazorProject.Shared.Models;
+using NewBlazorProject.Shared.Models.HR_Data;
 using NewBlazorProject.Shared.Models.MasterData;
 
 namespace NewBlazorProject.Server.Data
@@ -32,5 +33,9 @@ namespace NewBlazorProject.Server.Data
         public DbSet<MD_Address> MD_Addresses { get; set; }
         public DbSet<MD_UploadFile> MD_UploadFiles { get; set; }
         public DbSet<MD_Directory> MD_Directories { get; set; }
+        public DbSet<HR_Clearance> hR_Clearances { get; set; }
+        public DbSet<HR_Designation>hR_Designations { get; set; }
+        public DbSet<HR_Posting> hR_Postings { get; set; }
+        public DbSet<HR_Catagory> hR_Catagorys { get; set; }
     }
 }
